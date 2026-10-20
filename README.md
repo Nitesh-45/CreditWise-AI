@@ -1,6 +1,3 @@
-import pypandoc, os, textwrap
-readme = r'''<div align="center">
-
 # 💳 CreditWise AI
 ### Machine Learning-Based Loan Approval Prediction System
 
@@ -225,10 +222,6 @@ This repository is a useful learning experiment, but several issues should be ad
 
 Contributions and suggestions are welcome. For substantial changes, open an issue first to discuss the proposed improvement.
 
-## 📄 License
-
-No license is specified in the notebook. Add a license file before accepting reuse or redistribution.
-
 ---
 
 <div align="center">
@@ -237,7 +230,4 @@ No license is specified in the notebook. Add a license file before accepting reu
 *Exploring machine learning for loan approval prediction.*
 
 </div>
-'''
-out='/mnt/data/README.md'
-pypandoc.convert_text(readme, 'md', format='md', outputfile=out, extra_args=['--standalone'])
-print(os.path.exists(out), os.path.getsize(out))
+
